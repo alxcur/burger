@@ -56,6 +56,4 @@ Attempt to complete homework assignment as described in instructions. If unable 
  
 - - -
 
-Alex Curington
-SMU Coding Bootcamp
-March 2019
+Alex Curington | SMU Coding Bootcamp | March 2019
