@@ -1,6 +1,6 @@
 <div class="container">
-    <div class="input text-center"><br><br>
-        CREATE A BURGER<h2 class="heading headTitle" id="add"><i class="fas fa-hamburger"></i> </h2>
+    <div class="input text-center"><br>
+        <h2 class="heading headTitle" id="add">ADD A BURGER  <i class="fas fa-hamburger"></i> </h2>
         <div class="form-group">
             <form method="POST" action="api/burgers" class="addOne text-center">
                 <textarea id="textArea" type="text" name="burger_name" rows="1" cols="40"></textarea>
@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col">
                 <div class="leftBurgers">
-                    <p class="heading headTitle">TYPES OF BURGERS</p>
+                    <p class="heading headTitle">TYPES  <i class="fas fa-hamburger"></i> </p>
                     {{#each burgers}} {{#unless this.devoured}}
                     <p class="burgerType">{{this.burger_name}}</p>
                     <form action="api/burgers/{{this.id}}?_method=PUT" method="POST" class="dev">
@@ -22,8 +22,8 @@
                 </div>
             </div>
                 <div class="col">
-                    <div class="rightBurgers">
-                        <p class="heading headTitle">DEVOURED BURGERS</p>
+                    <div class="leftBurgers">
+                        <p class="heading headTitle">DEVOURED  <i class="fas fa-hamburger"></i> </p>
                         {{#each burgers}} {{#if this.devoured}}
                         <p class="burgerType">{{this.burger_name}}</p>
                         {{/if}} {{/each}}

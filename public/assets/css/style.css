@@ -1,12 +1,8 @@
 body {
   background-color: white;
   margin: 0 auto;
-  padding: 500px;
 }
 
-.add {
-  margin: 0 auto;
-}
 
 #heading {
   font-family: 'Courier New', Courier, monospace;
@@ -16,31 +12,40 @@ body {
   padding-bottom: 10px;
 }
 
-#btnDevour {
-  background-color: chartreuse;
-  font-family: 'Courier New', Courier, monospace;
-  padding-top: 12px;
-  margin-bottom: 10px;
-  display: inline-block;
-  padding-bottom: 12px;
-}
+.btnDevour {
+    background-color: sandybrown;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-display: bold;
+    font-size: 18px;
+    padding: 5px 20px 5px 20px;
+  }
 
-#burgerType {
+.burgerType {
   font-size: 18px;
-  color: aquamarine;
-  font-family: 'Courier New', Courier, monospace;
-  padding-top: 12px;
+  text-align: center;
+  line-height: 0.5em;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #btnCreate {
-  background-color: chartreuse;
+  background-color: blue;
   font-family: 'Courier New', Courier, monospace;
-  padding-top: 12px;
-  margin-bottom: 10px;
-  display: inline-block;
-  padding-bottom: 12px;
+  font-display: bold;
+  color: white;
+  font-size: 18px;
+  padding: 5px 20px 5px 20px;
 }
 
 #textArea {
-  height: 20px;
+  height: 25px;
+}
+
+.heading {
+  font-size: 18px;
+  text-align: center;
+  line-height: 0.5em;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
