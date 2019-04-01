@@ -1,58 +1,46 @@
 body {
   background-color: white;
+  margin: 0 auto;
+  padding: 500px;
 }
 
 .add {
-  margin: 2% -3%;
+  margin: 0 auto;
 }
 
-.heading {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18;
+#heading {
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 12px;
   color: black;
-  display:block;
   margin: 0 auto;
   padding-bottom: 10px;
 }
 
-ul,li {
-  list-style-type: none;
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
-}
-
-.btnDevour {
-  background: chartreuse;
-  font-family: monospace;
-  color: black;
-  padding: 5px;
-  border: 1px solid rgb(220, 108, 243);
-  border-radius: 5px;
+#btnDevour {
+  background-color: chartreuse;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 12px;
   margin-bottom: 10px;
   display: inline-block;
   padding-bottom: 12px;
 }
 
-.burgerType {
-  font-size: 25px;
+#burgerType {
+  font-size: 18px;
   color: aquamarine;
-  font-family: 'Righteous', cursive;
+  font-family: 'Courier New', Courier, monospace;
   padding-top: 12px;
 }
 
 #btnCreate {
-  display: block;
-  margin: 0 auto;
-  background: chartreuse;
-  color: black;
-  font-family: monospace;
-  padding: 5px;
-  border: 1px solid rgb(220, 108, 243);
-  border-radius: 5px;
-  margin-bottom: 5px;
+  background-color: chartreuse;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 12px;
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-bottom: 12px;
 }
 
 #textArea {
-  color white;
+  height: 20px;
 }

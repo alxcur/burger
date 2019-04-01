@@ -1,45 +1,33 @@
 <div class="container">
-    <div class="row text-center add">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="input text-center">
-                <h2 class="heading headTitle" id="add">Add A Burger</h2>
-                <div class="form-group">
-                    <form method="POST" action="api/burgers" class="addOne text-center">
-                        <textarea id="textArea" type="text" name="burger_name" rows="2" cols="40"></textarea>
-                        <button id="btnCreate" type="submit">Create!</button>
-                    </form>
+    <div class="input text-center"><br><br>
+        CREATE A BURGER<h2 class="heading headTitle" id="add"><i class="fas fa-hamburger"></i> </h2>
+        <div class="form-group">
+            <form method="POST" action="api/burgers" class="addOne text-center">
+                <textarea id="textArea" type="text" name="burger_name" rows="1" cols="40"></textarea>
+                <br><button id="btnCreate" type="submit">ADD</button>
+            </form><br><br>
+        </div>
+<div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="leftBurgers">
+                    <p class="heading headTitle">TYPES OF BURGERS</p>
+                    {{#each burgers}} {{#unless this.devoured}}
+                    <p class="burgerType">{{this.burger_name}}</p>
+                    <form action="api/burgers/{{this.id}}?_method=PUT" method="POST" class="dev">
+                        <input type="hidden" name="devoured" value="true"> <button class="btnDevour" type="submit">EAT
+                            IT</button> </form>
+                    {{/unless}} {{/each}}
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="main row">
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="leftBurgers text-center">
-                <h2 class="heading headTitle">New Burgers</h2>
-                <ul>
-                    {{#each burgers}} {{#unless this.devoured}}
-                        <li>
-                            <p class="burgerType">{{this.burger_name}}</p>
-                            <form action="api/burgers/{{this.id}}?_method=PUT" method="POST" class="dev">
-                                <input type="hidden" name="devoured" value="true">
-                                <button class="btnDevour" type="submit">Devour it</button>
-                            </form>
-                        </li>
-                    {{/unless}} {{/each}}
-                </ul>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="rightBurgers text-center">
-                <h2 class="heading headTitle">Burgers Devoured</h2>
-                <ul>
-                    {{#each burgers}} {{#if this.devoured}}
-                    <li>
+                <div class="col">
+                    <div class="rightBurgers">
+                        <p class="heading headTitle">DEVOURED BURGERS</p>
+                        {{#each burgers}} {{#if this.devoured}}
                         <p class="burgerType">{{this.burger_name}}</p>
-                    </li>
-                    {{/if}} {{/each}}
-                </ul>
+                        {{/if}} {{/each}}
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
+            </div>
