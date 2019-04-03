@@ -3,6 +3,8 @@
 ### Overview
 In this assignment, you'll create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
+![alt text](http://url/to/img.png)
+
 #### App Setup
 1. Create a GitHub repo called `burger` and clone it to your computer.
 2. Make a package.json file by running `npm init` from the command line.
